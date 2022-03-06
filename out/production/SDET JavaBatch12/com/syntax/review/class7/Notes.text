@@ -1,0 +1,11 @@
+Class
+
+Class A
+
+Objects control state and behavior
+---------------
+| variables   | ---> State -->
+| methods     | --->
+| fields      | ---> Behavior -->
+---------------
+  Blueprint

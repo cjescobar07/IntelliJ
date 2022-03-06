@@ -1,0 +1,19 @@
+Access Modifiers in Java:
+Access modifiers allow us to control the visibility of class members(fields, methods,constructors, etc.)
+and classes within itself in Java
+There are 4 access levels and there are keywords that we use to define these access levels. Fourth level is applied
+when we don't use any access modifier keyword.
+Levels from most restricted to less restricted are:
+1) private (keyword is also private)
+2) default (no keyword means default access level)
+3) protected (keyword is also protected)
+4) public (keyword is also public)
+Rules:
+1)We should always prefer private access modifier for fields because fields contain data and the methods of your
+class might use that data to perform some tasks.
+Sanity checks before setting the values to the fields our classes and methods might misbehave, also the access of the
+data should be restricted so that not every one can access the data.
+2) We can't use access modifiers with local variables.
+========================================================================================================================
+Constructors:
+Constructors in Java allows us to set the values of the fields of a class
