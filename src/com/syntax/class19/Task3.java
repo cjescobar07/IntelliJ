@@ -9,15 +9,19 @@ public class Task3 {
     3 - from different class inside different package  and observe result.
      */
     private Task3(int a){
+
         System.out.println("Private");
     }
     Task3(double a){
+
         System.out.println("Default");
     }
     protected Task3(String a){
+
         System.out.println("Protected");
     }
     public Task3(boolean a){
+
         System.out.println("Public");
     }
 

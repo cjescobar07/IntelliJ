@@ -8,6 +8,7 @@ public class Account{
     private double accountBalance = 150000;
 
     private void printUserName(){
+
         System.out.println(userName);
     }
     protected void printPassword(){
