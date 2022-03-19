@@ -13,3 +13,8 @@ Rules:
     for example, we can go from default or protected to public, but we can't do the reverse.
     5) We can't override a static method, but we can redeclare it.
     For example, main method can't be overridden as it is static.
+OOPS Main pillars:
+1) Inheritance(code re-usability)
+2) Polymorphism(less code, dynamic behavior)
+3) Abstraction
+4) Encapsulation

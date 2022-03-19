@@ -34,5 +34,8 @@ public class BrowserTester {
             b.testThePage();
             b.closeBrowser();
         }
+
+        Object s = new String();
+        Object zz = new GoogleChrome();
     }
 }
