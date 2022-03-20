@@ -41,7 +41,7 @@ public class Computer {
     }
 
 
-class Task1 {
+class laptopTester {
     /*
       Create a Class Computer that will have 4 subclasses as Apple, Lenovo, HP, Dell.
       Define common behavior within and some fields in parent class and override some methods in child classes
