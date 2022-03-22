@@ -1,6 +1,6 @@
 package com.syntax.class25;
 
-public interface Healthy {
+public interface InterfaceDemo01 {
     void Healthy();
 }
 interface Portable{
@@ -10,7 +10,7 @@ interface Portable{
 interface Eatable{
     void eat();
 }
-class Orange implements Healthy, Portable, Eatable{
+class Orange implements InterfaceDemo01, Portable, Eatable{
 
     @Override
     public void Healthy() {
