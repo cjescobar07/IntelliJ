@@ -7,61 +7,50 @@ Test your code.
 
 
 interface Shape {
-    double calculateArea();
-    double calculatePerimeter();
+    void calculateArea(double input);
+    void calculatePerimeter(double input);
 }
 
-class Square implements Shape{
-    private double length;
-    private double width;
-
-public Square(double length, double width){
-    this.length = length;
-    this.width = width;
-}
+class Square implements Shape{ // can also be "abstract class Square Shape"
 
     @Override
-    public double calculateArea() {
-        return length*width;
+    public void calculateArea(double input) {
+        double area = input * input;
+        System.out.println(area);
     }
 
     @Override
-    public double calculatePerimeter() {
-        return 2* (length+width);
+    public void calculatePerimeter(double input) {
+        double perimeter = 4*input;
+        System.out.println(perimeter);
+
     }
 }
 
 class Circle implements Shape{
-    private double radius;
-
-public Circle(double radius){
-    this.radius = radius;
-}
 
     @Override
-    public double calculateArea() {
-        return Math.PI * radius * radius;
+    public void calculateArea(double input) {
+        double area = Math.PI * Math.pow(input,2);
+        System.out.println(area);
     }
 
     @Override
-    public double calculatePerimeter() {
-        return 2* Math.PI * radius;
+    public void calculatePerimeter(double input) {
+        System.out.println(2*Math.PI*input);
     }
 }
 
 class Task01_Shape{
     public static void main(String[] args) {
-        double length = 3.0;
-        double width = 3.0;
 
-        Square square= new Square(length, width);
-        System.out.println("Square area: "+ square.calculateArea());
-        System.out.println("Square perimeter: "+ square.calculatePerimeter());
+        Shape shape= new Square();
+        shape.calculatePerimeter(10);
+
 
         //Circle area and perimeter
-        double radius= 3.0;
-        Circle circle= new Circle(radius);
-        System.out.println("Circle area: "+circle.calculateArea());
-        System.out.println("Circle perimeter: "+circle.calculatePerimeter());
+        Shape shape2 = new Circle();
+        shape2.calculateArea(10);
+
     }
 }

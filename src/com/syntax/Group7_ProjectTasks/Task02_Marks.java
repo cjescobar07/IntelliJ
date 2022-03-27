@@ -1,54 +1,60 @@
 package com.syntax.Group7_ProjectTasks;
 /*
-2.	 We have to calculate the average of marks obtained in three subjects by student A and by student B.
-     Create class 'Marks' with an abstract method 'getPercentage' that will be returning the average percentage of marks.
+2.	 We have to calculate the average of marks obtained in three subjects by student A and 4 subjects by student B.
+     Create class 'Marks' with an abstract method 'getAvg' that will be returning the average percentage of marks.
      Provide implementation of abstract method in classes 'A' and 'B'. The constructor of student A takes the marks in
      three subjects as its parameters and the marks in four subjects as its parameters for student B.
      Test your code
  */
 abstract class Marks {
 
-   abstract double getPercentage();
+   abstract double getAvg();
 
 }
 
 class StudentA extends Marks {
-    int sub1, sub2, sub3;
 
-    StudentA(int s1, int s2, int s3) {
-        sub1 = s1;
-        sub2 = s2;
-        sub3 = s3;
+   private double s1, s2,s3;
+
+    StudentA(double s1, double s2, double s3) {
+        this.s1 = s1;
+        this.s2 = s2;
+        this.s3 = s3;
     }
 
-    public double getPercentage() {
-        double total = ((sub1 + sub2 + sub3) / (double) 300) * 100;
-        return total;
+    @Override
+    double getAvg(){
+        double avg = (s1 + s2 + s3)/3;
+        return avg;
     }
+
 }
 
+class StudentB extends Marks {
 
-class StudentB extends Marks{
-    int sub1, sub2, sub3, sub4;
+    private double s1, s2, s3, s4;
+
     StudentB(int s1, int s2, int s3, int s4){
-        sub1 = s1;
-        sub2 = s2;
-        sub3 = s3;
-        sub4 = s4;
+        this.s1 = s1;
+        this.s2 = s2;
+        this.s3 = s3;
+        this.s4 = s4;
     }
-    public double getPercentage() {
-        double total = ((sub1+sub2+sub3+sub4)/(double)300)*100;
-        return total;
+
+    @Override
+    double getAvg() {
+        return (s1+s1+s3+s4)/4;
     }
 }
+
 
 public class Task02_Marks {
     public static void main(String[] args) {
-        StudentA studentA = new StudentA(90, 85, 91);
-        System.out.println("Student A percentage: " +studentA.getPercentage());
+        StudentA studentA = new StudentA(10,20,30);
+        System.out.println("Student A average: " +studentA.getAvg());
 
-        StudentB studentB = new StudentB(95,89,76,82);
-        System.out.println("Student B percentage: " +studentB.getPercentage());
+        StudentB studentB = new StudentB(10,20,30,40);
+        System.out.println("Student B average: " +studentB.getAvg());
     }
 }
 
