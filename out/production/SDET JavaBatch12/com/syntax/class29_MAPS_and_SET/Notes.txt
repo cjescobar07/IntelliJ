@@ -1,0 +1,32 @@
+Set in Java:
+    set is an interface in collections framework which is implemented but many classes for example:
+    HashSet, LinkedHashSet, and TreeHashSet.
+
+Properties of Set:
+    All the Sets don't allow duplicates
+
+HashSet:
+    1) HashSet does not maintain the insertion order
+    2) it is the fastest in all Sets
+    3) Most widely used Set
+
+LinkedHashSet:
+    1) Maintain the insertion order
+    2) slows than HashSet but faster than TreeSet, especially the insertions
+
+TreeSets:
+    1) Sorts the data in natural order for numbers in increasing order
+    2) it is the slowest when it comes to store the data.
+
+When to use which type of Set:
+    1) If we don't care about insertion order and data being sorted always use "HashSet"
+    2) If we need the insertion order, we don't have much of a choice, but to use LinkedHashSet. If we don't care
+    about the insertion order, we can compare it to TreeSet
+
+    LinkedHashSet                       vs                      TreeHashSet
+    Insertion is not slow                                       Slowest type of insertion
+    Retrieval is super slow                                     Slower than HashSet but faster than LinkedHasSet
+=======================================================================================================================
+Maps in Java:
+
+

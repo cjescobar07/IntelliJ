@@ -1,6 +1,6 @@
 package com.syntax.class17;
 
-import com.syntax.class18.AccessModifiers;
+import com.syntax.class18_ACCESS_MODIFIERS1.AccessModifiers;
 
 public class AccessModifiersTester {
     public static void main(String[] args){

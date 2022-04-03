@@ -1,0 +1,22 @@
+Maps in Java:
+    A Map is an interface that allows us to store the data in key value pairs.
+Benefits:
+    1) We can store two values inside the maps
+    2) Searching is very efficient
+Types of Map:
+1) HashMap      2) LinkedHashMap        3) TreeMap
+HashMap:
+    1) Insertion order is not maintained (downside)
+    2) Insertion and retrieval is the fastest
+LinkedHashMap:
+    1) Insertion order is maintained (upside)
+    2) Insertion speed is same as HashMap, but retrieval speed is slowest
+TreeMap:
+    1) Data is sorted in the natural order by default (upside)
+    2) Insertion speed is slowest, retrieval speed is better than LinkedHashMap, but slower than HashMap.
+Rules:
+    1) We can't convert a collection to a Map.
+        Ex: We can't convert a Set to a Map
+    2) Duplicate keys are not allowed in Maps
+    3) Duplicate values are allowed
+
