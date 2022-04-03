@@ -29,5 +29,6 @@ public class Task3 {
                 iterator.remove();
             }
         }
+        System.out.println(cities);
     }
 }

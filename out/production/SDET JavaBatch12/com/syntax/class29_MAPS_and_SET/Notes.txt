@@ -26,7 +26,12 @@ When to use which type of Set:
     LinkedHashSet                       vs                      TreeHashSet
     Insertion is not slow                                       Slowest type of insertion
     Retrieval is super slow                                     Slower than HashSet but faster than LinkedHasSet
-=======================================================================================================================
-Maps in Java:
+
+I don't care about insertion order but, I care about retrieval speed which Set should I use?
+HashSet
+I care about insertion order but, I don't care about retrieval speed which Set should I use?
+LinkedHashSet.
+if i want to have sorted data all the time?
+TreeSet
 
 
