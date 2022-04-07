@@ -1,0 +1,92 @@
+Method Overriding in Java:
+    Method Overriding happens when we have the same method names with the same signature(method name and its parameters
+    are called signature of a method) in a parent class and in a child class.
+
+Benefits:
+    1) Flexibility: With the help of method overriding child classes can provide its own implementations for method
+    that are present in the parent class.
+    2) Polymorphism: same method can behave differently depending upon the object we call it.
+
+Rules:
+    1) There must be a parent-child relationship between the classes.
+    2) The method that we are trying to override must be the same method as the parent class,
+    including same name and parameters.
+    3) If something doesn't participate in inheritance, we cannot override it.
+        Ex: private methods, fields, and constructors
+    4) If a method is declared final inside the parent class, we cannot override that method inside the child class
+    5) We cannot override the static methods, but we can redeclare them.
+        Ex: We cannot override the main method, but we can reuse it and overload it
+    6) We cannot change the access modifiers to be more restrictive.
+    7) Return type should be the same
+
+Method Overloading                              vs              Method Overriding:
+Method signature should be different                            Method signature should be the same
+Return type can be different                                    Return should be the same
+We don't care about the access modifiers         |              Access modifiers can be more restrictive
+We don't care about the non-access modifiers                    We care about the non-access modifiers
+(final, static, abstract)
+We can overload constructors                                    We can't override constructors
+We achieve compile time polymorphism,                           Considered run time polymorphism, dynamic polymorphism,
+early binding, or static binding polymorphism                   or late binding.
+========================================================================================================================
+
+Polymorphism:
+Polymorphism happens when an object behaves differently
+Ex: a method behaves different when we pass different parameters or when we call the method using different objects.
+
+========================================================================================================================
+
+Final Keyword in Java:
+Final keyword is a non access modifier than can help restrict some features of OOPS
+    1) when we use it with the class name, no other class can inherit from that class
+    2) When we use it with the method name, we can't override those methods inside the child class.
+    3) When we use it with fields, we can't change their values in the parent or child class, but we can have
+    the same name fields inside the child class.
+
+Rules:
+    1) We can't use final and abstract together
+    2) Static and final can be used together
+
+========================================================================================================================
+
+Abstraction in Java:
+Abstraction is a process through which we hide the implementation details and show only the functionality to the user
+Ex: if we have a method that calculates the tax of a salaried person, the person who wants to calculate his tax
+doesn't need to understand all the details
+
+Benefits:
+   1) Clean code
+   2) less complexity
+   3) improves the maintainability of the code
+
+We can achieve abstraction in java using Abstract classes and interfaces:
+    A class declared with abstract keyword is called abstract class
+
+Rules:
+   1) As soon as we have a method abstract, that class must also be abstract
+   2) Abstract don't have bodies inside the classes in which they are defined
+   3) A method can't be static and abstract at the same time
+   4) Fields cannot be abstract
+   5) Methods can't be private and abstract
+   6) Abstract keyword not allowed with constructors
+   7) We can have concrete and abstract methods in an abstract class
+
+========================================================================================================================
+
+Interfaces in Java:
+   1) Interfaces are contracts that define how a method should be called and classes provide the
+      implementation for those methods
+
+Rules:
+    1) All the variables in an interface are always public, static, and final
+    2) No instance field, therefore, no constructors
+    3) Methods in interfaces are always public and abstract by default
+    4) With interfaces, we use the "implements" keyword not the "extends" keyword
+    5) We can have multiple inheritance in interfaces
+    6) We can have static methods in interfaces
+    7) Interfaces can extend other interfaces
+
+
+
+
+
