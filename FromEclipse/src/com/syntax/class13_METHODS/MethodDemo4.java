@@ -16,7 +16,6 @@ public class MethodDemo4 {
       void methodWithoutParameters() {
   		
   	}
-  	
 	
 	
 public static void main(String[] args) {

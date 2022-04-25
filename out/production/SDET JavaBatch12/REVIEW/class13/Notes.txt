@@ -1,0 +1,63 @@
+
+Lists should be used when we have to store single elements as a collection.
+    1) They maintain the insertion order.
+    2) They allow us to store duplicate elements
+    3) They are dynamic in size
+    4) Data is stored based on indexes like arrays
+
+Two famous classes that implement the List interface are:
+    1) ArrayLinkedList
+    2) LinkedList
+
+ArrayList
+    1) When most of the operations (70-90%) are storing new data at the end of the list
+       and reading data no manipulation (adding or removing shifting of the data)
+       of data then we should go with the ArrayList
+
+LinkedList
+    1) When most of the operations (70-90%) are storing new data in- between or at the start of the list
+       then we should go with the LinkedList
+In real life, 90& of the time ArrayList is used
+
+Set
+    Set also store single values, but they don't allow duplicate.
+    1) HashSet 2) LinkedHashSet 3) TreeSet
+
+HashSet(90%) of the time it is used in real life)
+    1) Does not maintain the insertion order.
+    2) Fastest when it comes to insertion and retrieval speed.
+
+LinkedHashSet
+    1) Maintain the insertion order
+    2) Insertion is slower than HashSet, but faster than TreeSet
+    3) Retrieval speed is the slowest
+
+TreeSet
+    1) Sorts the data in natural order
+    2) Insertion is speed is the slowest
+    3) Retrieval speed is faster than LinkedHashSet, but slower than HashSet
+
+Map
+    1) Map is data structure that can store the data in the form of key value pairs.
+    We can use any real life info as a key, Ex: SSN number, phoneNumber
+    2) Searching in Maps iss super duper fast
+1) HashMap 2) LinkedHashMap 3) TreeMap 4) HashTable
+
+HashMap
+    1) Fastest most widely used, but does not maintain the insertion order
+
+LinkedHashMap
+    1) Maintains the insertion order
+    2) Slower than HashMap, but faster than TreeMap
+    3) Slowest of all four
+
+TreeMap
+    1) Data is stored in sorted form
+    2) Insertion speed is the slowest
+    3) Retrieval is better than LinkedHashMap, but slower than HashMap
+
+HashTable
+    1) Same as HashMap, but thread safe
+
+FileHandling in Java:
+Reading and writing data to files

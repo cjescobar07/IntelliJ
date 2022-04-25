@@ -3,34 +3,29 @@ package Group12_ProjectTasks;
 public class Group12_Task09 {
 
 	public static void main(String[] args) {
+
 		/*
-		 * Write a java program to find the second largest number in the array
-		 * 
+		 * Maximum and minimum number in the array?
 		 */
 
-		  int[] num = {10, 5, 350, 150, 50, 100, 550, 110};
-		
-		  int largestNum = num [0];
-		  int secondLargest = num [0];
-		  
-		  for (int i = 1; i<num.length; i++) {
-			  if (num[i] > largestNum) {
-				  secondLargest = largestNum;
-				  largestNum = num[i];
-			  }else if (num[i] > secondLargest) {
-				  secondLargest = num[i];
-			  }
-			  
-		  }
-		
-		System.out.println("The largest num is " + largestNum + " and the second largest num is " + secondLargest);
-		
-		
-		
-		
-		
-		
-		
-		
+		int[] arr = { 10, 20, 90, 50, 70 };
+		// assuming first number is the largest number
+		int largest = Integer.MIN_VALUE;
+		int secondLargest = Integer.MIN_VALUE;
+
+		// iterating through all the elements
+		for (int elements : arr) {
+
+			if (elements > largest) {
+				secondLargest = largest;
+				largest = elements;
+
+			} else if (elements > secondLargest && elements != largest) {
+				secondLargest = elements;
+			}
+		}
+		System.out.println("Largest " + largest);
+		System.out.println("Sceond Largest " + secondLargest);
+
 	}
 }

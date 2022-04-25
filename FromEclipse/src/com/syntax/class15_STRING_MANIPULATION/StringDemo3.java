@@ -3,14 +3,13 @@ package com.syntax.class15_STRING_MANIPULATION;
 public class StringDemo3 {
 
 	public static void main(String[] args) {
-		
-		String name = "How are @you guys @guys @guys @ guys";		
-		System.out.println(name.indexOf("@"));
-		System.out.println(name.indexOf("g"));
-		
-		System.out.println(name.indexOf("@", 8+1));
-		System.out.println(name.indexOf("guys", 15+1));
-		System.out.println(name.indexOf("@", name.indexOf(("@")+1)));
+		String name="How Camelyou Camelguys Camel";
+		System.out.println(name.indexOf("Camel"));
+		System.out.println(name.indexOf("Horse"));
+
+		//advance we can ignore it for now
+		System.out.println(name.indexOf("Camel", 14));
+		//System.out.println(name.indexOf("@", name.indexOf("@")+1));
 		
 		
 				

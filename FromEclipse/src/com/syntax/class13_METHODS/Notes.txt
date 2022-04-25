@@ -1,0 +1,30 @@
+Classes and Objects:
+Classes are blueprints,ideas, designs or templates from which we create the
+programming objects.
+Programming objects:
+Programming objects are similar to real life objects. They have attributes and
+behaviours. Attributes represent the state of objects and behaviours repent the
+integration of those objects.
+
+Class Student{
+String name;
+String id;
+int age;
+char gender;
+double gpa;
+void study(){
+System.out.println(name+" is studying")
+}
+public static void main(String []args){
+Student tarikObj=new Student();
+tarikObj.name="tarik";
+tarikObj.study();
+
+}
+}
+
+class MethodsDemo{
+void method(int number){
+
+}
+}

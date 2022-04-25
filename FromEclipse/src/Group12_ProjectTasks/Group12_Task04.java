@@ -4,40 +4,30 @@ public class Group12_Task04 {
 
 	public static void main(String[] args) {
 		/*
-		 * Create a 2D array of integers. Develop a program which will calculate the sum 
-		 * of even and odd numbers for that array.
+		 * Create a 2D array of integers. Develop a program which will calculate the sum
+		 * of  even and odd numbers for that array.
 		 */
 
-		int[][] a = { { 10, 20, 11}, 
-					  { 23, 24, 15}, 
-					  { 21, 22, 31}, 
-					};
-		
-		int even = 0;
-		int odd = 0;
-		
-		for (int i = 0; i < a.length; i += 1) {
-			
-			for (int j = 0; j < a[i].length; j++)
-				
-				if (a[i][j] % 2 == 0) {
-					even = even + a[i][j];
+		// 1) Create the 2D array
+		// 2) Store Even and odd numbers in the 2D array
+		// 3) Access the elements
+		// 4) check the if element is even if it is add it to sumEven variable
+		// 5) check the if element is odd if it is add it to sumOdd variable
+		// 6) print the values of both variables
+
+		int[][] array2D = { { 2, 3, 4 }, { 5, 6 }, { 12, 6, 8 } };
+		int sumEven = 0;
+		int sumOdd = 0;
+		for (int[] row : array2D) {
+			for (int element : row) {
+				if (element % 2 == 0) {
+					sumEven += element;
 				} else {
-					odd = odd + a[i][j];
+					sumOdd += element;
 				}
+			}
 		}
-		System.out.println("The Sum of even numbers = " + even);
-		System.out.println("The Sum of odd numbers = " + odd);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("Sum of Even numbers " + sumEven);
+		System.out.println("Sum of Odd numbers " + sumOdd);
 	}
 }

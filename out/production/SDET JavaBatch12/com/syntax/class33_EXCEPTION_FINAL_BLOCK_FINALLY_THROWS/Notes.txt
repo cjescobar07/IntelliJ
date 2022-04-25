@@ -1,0 +1,2 @@
+Exceptions in java:
+    Exception in java is an unwanted behaviour that disrupts the normal flow of execution.

@@ -4,58 +4,57 @@ import java.util.Scanner;
 
 public class MethodDemo1 {
 
-	// void is a type of method that doesn't return anything when called
-	// "checkEvenOdd", "takesUmbrella", and "person" are example names of a method
-	// we use parenthesis(), to pass information from outside 
-	// "int num", "boolean isRaining", "String name" are examples of a parameter that we can pass to the method when called 
+	// void is type of methods that don't return anything when called
+	//checkEvenOdd is the name of the method
+	//() we use to pass information from outside
+	//int number this is parameter that we can pass to this method when called
 	// we can use this variable inside the logic of method
-	
-	void checkEvenOdd(int num){	
-	if (num %2 == 0) {
-		System.out.println(num + " is even");
-	}else {
-		System.out.println(num + " is odd");
+	void checkEvenOdd(int number) {
+		if (number % 2 == 0) {
+			System.out.println("Even");
+		} else {
+			System.out.println("Odd");
+		}
+
 	}
-		
- }	
-	
-	void takesUmbrella(boolean isRaining) {
+
+	void edward(boolean isRaining) {
 		if (isRaining) {
-			System.out.println("Please take your umbrealla");
-		}else {
-			System.out.println("You don't need an umbrella");
+			System.out.println("i am staying home");
+		} else {
+			System.out.println("lets go for a walk");
 		}
 	}
-	
-	void person (String name) {
-		if(name.equals("Chris")) {
-			System.out.println(name + ", let's study more!");
-		}else if(name.equals("Michelle")) {
-			System.out.println("Hello " + name);
-		}else {
-			System.out.println("Who are you?!!");
+	// create a method to check a name if name is Teyfur it prints
+	//send memes otherwise if name is Name is Maha prints i am a doctor
+	//prints i don't know you
+
+	void checkPerson(String name) {
+		if ("Teyfur".equals(name)) {
+			System.out.println("Memer");
+		} else if ("Maha".equals(name)) {
+			System.out.println("Doctor");
+		} else {
+			System.out.println("Unknown");
 		}
 	}
-	
-public static void main(String[] args) {
 
-	MethodDemo1 object1 = new MethodDemo1();
-	object1.checkEvenOdd(200);
-	object1.checkEvenOdd(555);
-	object1.checkEvenOdd(778);
-	object1.checkEvenOdd(1000);
-	System.out.println("-------------------");
-	
-	object1.takesUmbrella(true);
-	object1.takesUmbrella(false);
-	System.out.println("-------------------");
+	public static void main(String[] args) {
 
-	object1.person("Chris");
-	object1.person("Michelle");
-	object1.person("Sebastian");
-	
-	Scanner user = new Scanner (System.in);
-	int num = user.nextInt();
-	// int num2 = object1.checkEvenOdd(120); gives error since it cannot take any input in this example
- }
+		MethodDemo1 object1 = new MethodDemo1();
+		object1.checkEvenOdd(120);
+		object1.checkEvenOdd(3);
+		object1.checkEvenOdd(7);
+		object1.edward(false);
+
+		object1.checkPerson("Teyfur");
+		object1.checkPerson("Maha");
+
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		//int number2=object1.checkEvenOdd(120);
+
+
+	}
+
 }

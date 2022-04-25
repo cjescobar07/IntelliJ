@@ -1,6 +1,6 @@
 package com.syntax.class32_HANDLING_EXCEL_FILES;
 
-import com.syntax.util.ConfigReader;
+import com.syntax.UTIL.ConfigReader;
 
 import java.io.IOException;
 

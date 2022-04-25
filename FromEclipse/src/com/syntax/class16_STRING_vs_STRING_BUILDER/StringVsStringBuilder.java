@@ -3,20 +3,14 @@ package com.syntax.class16_STRING_vs_STRING_BUILDER;
 public class StringVsStringBuilder {
 
 	public static void main(String[] args) {
-		
-		String s = "Chris Is Great";
-		
-		System.out.println(s.replace(" ", ""));		
-		System.out.println(s);
-		s.concat("hahaha");
-		
-		StringBuilder stringBuilder = new StringBuilder("Chris Is Great");
-		stringBuilder.append("hahaha");
-		System.out.println(stringBuilder);
-		
-		System.out.println(stringBuilder);
-		System.out.println(stringBuilder.reverse());
-		System.out.println(stringBuilder);
+
+		String s = new String("Asghar Is Great"); //original string
+		s.concat("hahah"); //add new String hahha to the original string
+		System.out.println(s); //printing out the original string
+
+		StringBuilder stringBuilder = new StringBuilder("Asghar Is Great");//original string
+		stringBuilder.append("Hahha"); //add new String hahha to the string
+		System.out.println(stringBuilder); //printing out the original string
 		
 				
 		

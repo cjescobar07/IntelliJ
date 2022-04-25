@@ -3,32 +3,29 @@ package Group12_ProjectTasks;
 public class Group12_Task06 {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		/*
-		 * Write a java program to check whether a given number is prime or not
+		 * Write a java program to check whether a given number is prime or not?
 		 */
+		// if a number is not greater than 1 it is not prime
+		// if a number is greater than 2 divide that number with all the numbers
+		// and check if you get a remainder other than 0 if yes that number is
+		//not prime
+		int number=5;
+		boolean isPrime=true;
 
-		
-		int num = 19;
-		int nums = 0; 
-		
-		for (int i = 2; i<=num/2; i++) {
-			if(num%i==0){
-				nums = nums + 1;
-				
+		if(number>1) {
+			for(int i=2;i<number;i++) {
+				if(number%i==0) {
+					isPrime=false;
+					break;
+				}
 			}
+		}else {
+			isPrime=false;
 		}
-	
-			if (nums==0) {
-				System.out.println("Number " + num+ " is prime");
-			}else 
-				System.out.println("Number "+ nums+ " is not prime");
-		
-		
-		
-		
-		
-		
-		
-		
+
+		System.out.println(number+"  isPrime "+isPrime);
+
 	}
 }

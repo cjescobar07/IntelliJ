@@ -6,7 +6,7 @@ public class StringDemo1 {
 	
 		String name = "Chris"; //best practice to use this way
 		
-		String name2 = new String("Chris in all uppercase"); // Still possible but not preferred
+		String name2 = new String("CHRIS in all uppercase"); // Still possible but not preferred
 	
 		System.out.println(name);
 		System.out.println(name2.length());	

@@ -33,5 +33,7 @@ public class Task4 {
 			newStr+=strArr[i]+" ";
 		}
 		System.out.println(newStr);
+
 	}
+
 }
